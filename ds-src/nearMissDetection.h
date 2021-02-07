@@ -175,7 +175,7 @@ namespace NearMissDetection {
             void setPaths(guint num_sources);
 
             NEARMISS() {
-                threshold = 700;
+                threshold = 350;
             }
 
     };

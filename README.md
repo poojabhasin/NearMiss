@@ -26,6 +26,10 @@ This solution can be used to reduce the Near Miss incidents happening on the roa
 
 NEARMISS Application consists of an Intelligent Video Analytics Pipeline powered by Deepstream and NVIDIA Jetson Nano and on top of that we have applied some deep learning techniques for the object detection.
 
+![NEARMISS](resources/JetsonNX.JPEG)
+
+Whenever any vehicle or person is detected and found near to each other it will render the detections are red.
+
 ## Deepstream Setup
 
 This post assumes you have a fully functional Jetson device. If not, you can refer the documentation [here](https://docs.nvidia.com/jetson/jetpack/install-jetpack/index.html).

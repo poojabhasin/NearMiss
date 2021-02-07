@@ -601,7 +601,7 @@ namespace NearMissDetection
     g_object_set(G_OBJECT(streammux), "width", MUXER_OUTPUT_WIDTH,
                  "height", MUXER_OUTPUT_HEIGHT, "batch-size", num_sources,
                  "batched-push-timeout", MUXER_BATCH_TIMEOUT_USEC,
-                 "live-source", TRUE, NULL);
+                 "live-source", FALSE, NULL);
 
     // Set all important properties of pgie_vehicle_detector
     g_object_set(G_OBJECT(pgie_vehicle_detector),
@@ -632,7 +632,7 @@ namespace NearMissDetection
     }
 
     g_object_set(G_OBJECT(sink),
-                 "sync", FALSE, NULL);
+                 "sync", TRUE, NULL);
 
     tiler_rows = (guint)sqrt(num_sources);
     tiler_columns = (guint)ceil(1.0 * num_sources / tiler_rows);
